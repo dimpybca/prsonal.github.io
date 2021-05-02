@@ -1,0 +1,108 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text-effect
+{
+    text-shadow: 4px 4px 4px blue;
+    transition: transform 2s;
+}
+#ft{
+    text-shadow: 4px 4px 4px red;
+    text-transform: capitalize;
+}
+.gif
+{
+    /* background-color: red; */
+    width: 95%;
+    height: 80px;
+    position: relative;
+}
+.gif img{
+    width: 100px;
+    height:80px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    animation-name: batman;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes batman {
+    from{left: 0 }
+    to{left: 95% }
+}
+
+.img-cicl
+{
+    width: 50px;
+    height: 50px;
+    transition-property: width,height;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.img-cicl:hover{
+    width: 100px;
+    height: 100px;
+}
+.colbreak
+{
+    column-count: 3;
+    column-gap: 50px;
+    column-rule:dashed;
+    column-rule-color: orange;
+    text-align: justify;
+}
+
+.image{
+    background-image: url(dk1.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: 100%,100%;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 4px gray;
+}
+.card
+{
+    box-shadow: 4px 4px 4px 4px gray; 
+}
+.msgbox
+{
+    width: 300px;
+    height: 200px;
+    border: 5px solid black;
+    /* resize:horizontal;
+    overflow: auto; */
+    background-color: blanchedalmond;
+    transform: translatex(50px);
+}
+.text-effect:hover{transform: rotate(360deg);}
+
+.img-cicl1
+{
+    width: 50px;
+    height: 50px;
+    transition: transform 1s;
+}
+.img-cicl1:hover{transform: scale(2,2);}
+
+.join_gradien
+{
+    background-image: linear-gradient(to left,red,yellow);
+}
+
+.flax-css
+{
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(to left,red,yellow);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
